@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markdown-body {
+    /* FIXME: should have a better way to overwrite the color */
+    background-color: transparent !important;
+}

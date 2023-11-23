@@ -1,0 +1,10 @@
+{
+  "name": "khojx",
+  "version": "1.0.0",
+  "description": "Monorepo for the khojx",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev:native": "pnpm --filter @khojx/native run dev"
+  }
+}
