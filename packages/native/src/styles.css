@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .markdown-body {
-    /* FIXME: should have a better way to overwrite the color */
-    background-color: transparent !important;
+  /* FIXME: should have a better way to overwrite the color */
+  background-color: unset !important;
+  @apply text-[14px] !important;
 }

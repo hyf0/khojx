@@ -13,5 +13,13 @@ export default defineConfig(async () => ({
   server: {
     port: 1420,
     strictPort: true,
+    proxy: {
+      '/api': {
+        target: 'https://app.khoj.dev/api',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+
+      }
+    }
   }
 }));
